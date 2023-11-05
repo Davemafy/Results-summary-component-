@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Hanken";
+  src: url("/results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Hanken-md";
+  src: url("/results-summary-component-main/assets/fonts/static/HankenGrotesk-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Hanken-Bd";
+  src: url("/results-summary-component-main/assets/fonts/static/HankenGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Hanken-eBd";
+  src: url("/results-summary-component-main/assets/fonts/static/HankenGrotesk-Bold.ttf");
+}
+
+:root {
+  /* Primary */
+  --lht: 0.050980392156862744;
+  --bg-light-red: hsla(0, 100%, 67%, var(--lht));
+  --bg-orangey-yellow: hsl(39, 100%, 56%, var(--lht));
+  --bg-green-teal: hsl(166, 100%, 37%, var(--lht));
+  --bg-cobalt-blue: hsl(234, 85%, 45%, var(--lht));
+
+  --cl-light-red: hsla(0, 100%, 67%, 1);
+  --cl-orangey-yellow: hsl(39, 100%, 56%);
+  --cl-green-teal: hsl(166, 100%, 37%);
+  --cl-cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  /* bg */
+  --bg-light-slate-blue: hsl(252, 100%, 67%);
+  --bg-light-royal-blue: hsl(241, 81%, 54%);
+
+  /* circle */
+  --bg-violet-blue: hsla(256, 72%, 46%, 1);
+  --bg-persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* neutral */
+  --cl-white: hsl(0, 0%, 100%);
+  --cl-pale-blue: hsl(221, 100%, 96%);
+  --cl-light-lavender: hsl(241, 100%, 89%);
+  --cl-dark-gray-blue: hsl(224, 30%, 27%);
+
+  --fz-base: 18px;
+
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-800: 800;
+
+  --sm: 375px;
+  --lg: 1440px;
+}
+
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: "Hanken";
+
+  @media (min-width: 540px) {
+   display: grid;
+   place-items: center; 
+  }
+}
+
+h4 {
+  display: inline;
+}
+em{
+  font-style: normal;
+  color: hsl(224, 30%, 27%, 0.5);
+  font-family: "Hanken-Bd";
+}
+
+.overall{
+  color: inherit;
+  font-family: hanken;
+}

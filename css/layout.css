@@ -1,0 +1,168 @@
+/* CUSTOM STYLE FOR THE COMPONENT SECTION */
+#component {
+  display: flex;
+}
+
+#component>* {
+  flex: 1;
+  max-width: 350px;
+}
+
+
+@media(min-width: 700px) {
+  #component {
+    border-radius: 2rem;
+  }
+
+  #component .result {
+    border-radius: inherit;
+  }
+
+  #component .result .wrapper-res {
+    padding: 2rem;
+    border-radius: inherit;
+  }
+
+  #component .result .remark-block {
+    text-wrap: unset !important;
+    font-size: .95rem;
+  }
+
+  #component .result .score-block {
+    height: 100% !important;
+  }
+
+  #component .result .score-block .circle {
+    height: 70%;
+  }
+
+  #component section.summary .wrapper-btn {
+    margin-top: 3rem;
+  }
+}
+
+@media(max-width: 700px) {
+  #component {
+    height: fit-content;
+    flex-flow: column;
+    margin: auto;
+  max-width: fit-content ;
+  }
+
+  #component>* {
+    flex: unset;
+    min-height: 50vh;
+    max-width: unset;
+  }
+
+  #component .result {
+    border-end-start-radius: 2rem;
+    border-end-end-radius: 2rem;
+  }
+
+  #component .result .wrapper-res {
+    padding: 0rem;
+  }
+}
+
+
+/* CUSTOM STYLE FOR RESULT SECTION */
+
+#component .result {
+  display: flex;
+}
+
+#component .result .wrapper-res {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+#component .result .score-block {
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#component .result .score-block .circle {
+  min-height: 8rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#component .result .remark-block {
+  display: flex;
+  flex-flow: column;
+  gap: .5rem;
+  text-align: center;
+  text-wrap: balance;
+}
+
+
+/* CUSTOM STYLES FOR  SUMMARY SECTION */
+
+#component .summary {
+  display: grid;
+}
+
+#component .summary .wrapper-sum {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  padding-inline: 1.5rem;
+  padding-block: .7rem 2rem;
+}
+
+#component .summary .title,
+#component .summary .category,
+#component .summary .wrapper-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+}
+
+#component .summary .title {
+  padding-top: .8rem;
+}
+
+#component .summary .category {
+  padding-inline: 1rem;
+}
+
+#component .category .type,
+#component .category .score {
+  display: flex;
+  justify-content: flex-start;
+  gap: .3rem;
+  align-items: center;
+}
+
+#component .category .type {
+  gap: 1rem;
+}
+
+
+#component section.summary .wrapper-btn {
+  margin-top: .5rem;
+}
+
+#component .summary .wrapper-sum .continue-btn {
+  height: 100%;
+  width: 100%;
+}
+
+.attribution {
+  font-size: .7rem;
+  text-align: center;
+  padding:  1rem;
+  width: 100%;
+}
+

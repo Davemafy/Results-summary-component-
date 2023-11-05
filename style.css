@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Hanken";
+  src: url("/results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Hanken-md";
+  src: url("/results-summary-component-main/assets/fonts/static/HankenGrotesk-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Hanken-Bd";
+  src: url("/results-summary-component-main/assets/fonts/static/HankenGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Hanken-eBd";
+  src: url("/results-summary-component-main/assets/fonts/static/HankenGrotesk-Bold.ttf");
+}
+
+:root {
+  /* Primary */
+  --cl-light-red: #FF57570D;
+  --cl-orangey-yellow: hsl(39, 100%, 56%);
+  --cl-green-teal: hsl(166, 100%, 37%);
+  --cl-cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  /* bg */
+  --cl-light-slate-blue: hsl(252, 100%, 67%);
+  --cl-light-royal-blue: hsl(241, 81%, 54%);
+
+  /* circle */
+  --cl-violet-blue: hsla(256, 72%, 46%, 1);
+  --cl-persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* neutral */
+  --cl-white: hsl(0, 0%, 100%);
+  --cl-pale-blue: hsl(221, 100%, 96%);
+  --cl-light-lavender: hsl(241, 100%, 89%);
+  --cl-dark-gray-blue: hsl(224, 30%, 27%);
+
+  --fz-base: 18px;
+
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-800: 800;
+
+  --sm: 375px;
+  --lg: 1440px;
+}
+
+body {
+  min-height: 100vh;
+  font-size: var(--fz-base);
+  font-family: "Hanken";
+
+  @media (min-width: 540px) {
+    display: grid;
+    place-items: center;
+  }
+}
+/*
+.wrapper {
+  /*
+  display: grid;
+  max-width: 807px;
+  height: 50%;
+    grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: min(500px, 100vh);
+
+  border: 1px red solid;
+  height: 100vh;
+  overflow: scroll;
+  background: #fffffe;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.result-wrapper {
+  background: linear-gradient(var(--cl-light-slate-blue), var(--cl-light-royal-blue));
+  border-radius: 0 0 2rem 2rem;
+  text-align: center;
+  color: var(--cl-light-lavender);
+}
+
+@media (min-width: 540px) {
+  .result-wrapper {
+    border-radius: 0rem 2rem 2rem 0;
+  }
+}
+
+@media (min-width: 700px) {
+  .result-wrapper {
+    border-radius: 2rem;
+  }
+}
+
+
+
+
+
+
+/*
+.result-wrapper,
+.result-wrapper>* {
+  display: grid;
+  place-items: center;
+}
+/*
+
+.inner-wrapper {
+  height: fit-content;
+  margin: auto;
+  margin-block: 1rem;
+  display: block;
+  border: 3px grey solid;
+}
+
+.result-wrapper .inner-wrapper {
+  place-items: center;
+}
+
+.result-wrapper .title {
+  place-self: start center;
+  font-weight: var(--fw-700);
+}
+
+.points-wrapper {
+  background: linear-gradient(var(--cl-violet-blue),
+      var(--cl-persian-blue));
+  height: 140px;
+  aspect-ratio: 1;
+  font-size: 100%;
+  padding-block: 1.5rem;
+  display: grid;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.points-wrapper .average {
+  font-size: 50px;
+  font-weight: var(--fw-800);
+  color: var(--cl-white);
+}
+
+.points-wrapper .total {
+  font-size: 15px;
+  font-weight: var(--fw-500);
+}
+
+.remark-wrapper {}
+
+.remark-title {
+  font-size: 25px;
+  color: var(--cl-white);
+  font-weight: var(--fw-700);
+  margin-block: 1rem .3rem;
+}
+
+.remark-wrapper .remark {
+  font-size: 15px;
+  width: 90%;
+  margin: auto;
+  font-weight: var(--fw-500);
+}
+
+
+.summary-wrapper {
+  width: 100%;
+}
+
+.summary-wrapper .inner-wrapper {
+  /*
+  width: 83%;
+  gap: 1.5rem;
+  height: fit-content; /*
+  display: grid;
+  gap: 1rem;
+  border: 0;
+  margin-inline: auto;
+}
+
+.summary-wrapper .title {
+  font-weight: var(--fw-800);
+  color: var(--cl-dark-gray-blue);
+}
+
+.summary-wrapper .category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--cl-light-red);
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+}
+
+.summary-wrapper .category .type {}
+
+
+.summary-wrapper .category .score {}
+
+.category-wrapper .score {}
+
+.category-wrapper .score .point {}
+
+.summary-wrapper button {
+  background: var(--cl-dark-gray-blue);
+  border: 0;
+  padding-block: 1rem;
+  border-radius: 2rem;
+  color: var(--cl-white);
+  font-family: inherit;
+  font-weight: var(--fw-700);
+  font-size: 16px;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}*/
