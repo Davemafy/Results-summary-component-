@@ -6,22 +6,7 @@
 
 @font-face {
   font-family: "Hanken";
-  src: url("/results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
-}
-
-@font-face {
-  font-family: "Hanken-md";
-  src: url("/results-summary-component-main/assets/fonts/static/HankenGrotesk-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Hanken-Bd";
-  src: url("/results-summary-component-main/assets/fonts/static/HankenGrotesk-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Hanken-eBd";
-  src: url("/results-summary-component-main/assets/fonts/static/HankenGrotesk-Bold.ttf");
+  src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
 }
 
 :root {
